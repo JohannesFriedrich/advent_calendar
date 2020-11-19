@@ -1,0 +1,278 @@
+body {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snow-bg.svg) no-repeat top center #82d8cb;
+  background-size: cover;
+}
+
+/* title graphic */
+.title {  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.title img {
+  width: 90%;
+  height: auto;
+}
+
+/* mobile first grid layout */
+.grid-1 {
+  display: grid;
+  width: 96%;
+  max-width: 900px;
+  margin: 2% auto;
+  
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 25px;
+  
+  grid-template-areas:    "t        t       t"
+                          "d23      d20     d12"
+                          "d2       d14     d4"
+                          "d5       d22     d16"
+                          "d1       d7      d9"
+                          "d10      d11     d18"
+                          "d13      d3      d15"
+                          "d6       d17     d8"
+                          "d19      d24     d21";
+}
+
+/* media query */
+@media only screen and (min-width: 500px) {
+  
+  .grid-1 {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "t     t     t     d2      d7      d8"
+                         "t     t     t     d4      d11     d12"
+                         "t     t     t     d19     d9      d13"
+                         "d6    d1    d24   d24     d21     d20"
+                         "d17   d18   d24   d24     d5      d22"
+                         "d3    d23   d16   d14     d10     d15";
+  }
+  
+}
+
+
+/* individual items */
+  .title {
+    grid-area: t;
+  }
+  .day-1 {
+  grid-area: d1;
+  }
+  .day-1 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/child.svg);
+  }
+  .day-2 {
+    grid-area: d2;
+  }
+  .day-2 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/donut.svg);
+  }
+  .day-3 {
+    grid-area: d3;
+  }
+  .day-3 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/santa.svg);
+  }
+  .day-4 {
+    grid-area: d4;
+  }
+  .day-4 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/child-3.svg);
+  }
+  .day-5 {
+    grid-area: d5;
+  }
+  .day-5 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/book.svg);
+  }
+  .day-6 {
+    grid-area: d6;
+  }
+  .day-6 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snowflake.svg);
+  }
+  .day-7 {
+    grid-area: d7;
+  }
+  .day-7 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/gift.svg);
+  }
+  .day-8 {
+    grid-area: d8;
+  }
+  .day-8 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/stocking.svg);
+  }
+  .day-9 {
+    grid-area: d9;
+  }
+  .day-9 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/gift.svg);
+  }
+  .day-10 {
+    grid-area: d10;
+  }
+  .day-10 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/bird.svg);
+  }
+  .day-11 {
+    grid-area: d11;
+  }
+  .day-11 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snowman.svg);
+  }
+  .day-12 {
+    grid-area: d12;
+  }
+  .day-12 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/child-2.svg);
+  }
+  .day-13 {
+    grid-area: d13;
+  }
+  .day-13 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/holly.svg);
+  }
+  .day-14 {
+    grid-area: d14;
+  }
+  .day-14 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/horse.svg);
+  }
+  .day-15 {
+    grid-area: d15;
+  }
+  .day-15 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/book.svg);
+  }
+  .day-16 {
+    grid-area: d16;
+  }
+  .day-16 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/bird.svg);
+  }
+  .day-17 {
+    grid-area: d17;
+  }
+  .day-17 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/stocking.svg);
+  }
+  .day-18 {
+    grid-area: d18;
+  }
+  .day-18 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/donut.svg);
+  }
+  .day-19 {
+    grid-area: d19;
+  }
+  .day-19 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/child.svg);
+  }
+  .day-20 {
+    grid-area: d20;
+  }
+  .day-20 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/holly.svg);
+  }
+  .day-21 {
+    grid-area: d21;
+  }
+  .day-21 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/snowflake-2.svg);
+  }
+  .day-22 {
+    grid-area: d22;
+  }
+  .day-22 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/santa.svg);
+  }
+  .day-23 {
+    grid-area: d23;
+  }
+  .day-23 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/child-2.svg);
+  }
+  .day-24 {
+    grid-area: d24;
+  }
+  .day-24 .back {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/tree.svg);
+  }
+
+
+/* door styles */
+
+.grid-1 input {
+  display: none;
+}
+
+label {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  height: 120px;
+}
+
+.door {
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 300ms;
+  border: 2px dashed transparent;
+  border-radius: 10px;
+}
+
+  .door div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* typography */
+    font-family: 'Kalam', cursive;
+    color: #385052;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .door .back {
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #2e313d;
+      transform: rotateY(180deg);
+  }
+
+  label:hover .door {
+    border-color: #385052;
+  }
+
+  :checked + .door {
+    transform: rotateY(180deg);
+  }
+
+
+/* footer styles */
+footer {
+  text-align: center;
+  padding: 2em 0;
+}  
+  footer a {
+      color: #2e313d;
+  } 
+    footer a:hover {
+          text-decoration: none;
+    }
